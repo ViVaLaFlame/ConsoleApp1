@@ -1,7 +1,1 @@
-﻿string MyName;
-
-MyName = "Amir";    
-
-Console.WriteLine(MyName);
-
-Console.ReadKey(); 
+﻿Console.WriteLine("Привет,\n мир!");
