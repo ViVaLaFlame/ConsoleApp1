@@ -1,9 +1,10 @@
-﻿Console.Write("Enter your name:");
-string name = Console.ReadLine();
-Console.Write("Enter your age:");
-byte age = checked ((byte) int.Parse(Console.ReadLine()));
-Console.WriteLine("Ur name is {0} and ur age is {1}", name, age);
-Console.Write("What is ur fav day of the week:");
-DayOfWeek day = (DayOfWeek) int.Parse(Console.ReadLine());
-Console.WriteLine("Your fav day of week is {0}", day);
+﻿Console.Write("Enter ur name:");
+var name = Console.ReadLine();
+Console.WriteLine("Enter ur age:");
+var age = Console.ReadLine();
+Console.Write("Enter ur day of birth:");
+var dayofbirth = Console.ReadLine();
+Console.WriteLine("Ur name: {0} \nUr age: {1}\nUr birthday: {2}", name, age, dayofbirth);
+
 Console.ReadKey();
+
