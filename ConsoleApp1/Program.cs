@@ -1,10 +1,36 @@
-﻿Console.Write("Enter ur name:");
-var name = Console.ReadLine();
-Console.WriteLine("Enter ur age:");
-var age = Console.ReadLine();
-Console.Write("Enter ur day of birth:");
-var dayofbirth = Console.ReadLine();
-Console.WriteLine("Ur name: {0} \nUr age: {1}\nUr birthday: {2}", name, age, dayofbirth);
+﻿Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы:");
 
-Console.ReadKey();
+var Color = Console.ReadLine();
+
+if (Color == "red")
+{
+    Console.BackgroundColor= ConsoleColor.Red;
+    Console.ForegroundColor= ConsoleColor.Black;
+
+    Console.WriteLine("Your color is red");
+}
+
+else if (Color == "green")
+{
+    Console.BackgroundColor= ConsoleColor.Green;
+    Console.ForegroundColor= ConsoleColor.Black;
+
+    Console.WriteLine("Your color is green");
+}
+
+else if (Color == "white")
+{
+    Console.BackgroundColor= ConsoleColor.White;
+    Console.ForegroundColor= ConsoleColor.Black;
+
+    Console.WriteLine("Your color is white");
+}
+
+else
+{
+    Console.BackgroundColor= ConsoleColor.Cyan;
+    Console.ForegroundColor= ConsoleColor.Black;
+
+    Console.WriteLine("Your color is cyan");
+}
 
