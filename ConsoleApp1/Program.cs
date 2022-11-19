@@ -1,36 +1,32 @@
-﻿Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы:");
+﻿int t = 1;
 
-var Color = Console.ReadLine();
-
-if (Color == "red")
+do
 {
-    Console.BackgroundColor= ConsoleColor.Red;
-    Console.ForegroundColor= ConsoleColor.Black;
+    switch (Console.ReadLine())
+    {
+        case "red":
+            Console.BackgroundColor = ConsoleColor.Red;
+            Console.ForegroundColor = ConsoleColor.Black;
 
-    Console.WriteLine("Your color is red");
+            Console.WriteLine("Your color is red!");
+            break;
+
+        case "green":
+            Console.BackgroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.Black;
+
+            Console.WriteLine("Your color is green!");
+            break;
+
+        case "cyan":
+            Console.BackgroundColor = ConsoleColor.Cyan;
+            Console.ForegroundColor = ConsoleColor.Black;
+
+            Console.WriteLine("Your color is cyan!");
+            break;
+        default:
+            continue;
+    }
+    t++;
 }
-
-else if (Color == "green")
-{
-    Console.BackgroundColor= ConsoleColor.Green;
-    Console.ForegroundColor= ConsoleColor.Black;
-
-    Console.WriteLine("Your color is green");
-}
-
-else if (Color == "white")
-{
-    Console.BackgroundColor= ConsoleColor.White;
-    Console.ForegroundColor= ConsoleColor.Black;
-
-    Console.WriteLine("Your color is white");
-}
-
-else
-{
-    Console.BackgroundColor= ConsoleColor.Cyan;
-    Console.ForegroundColor= ConsoleColor.Black;
-
-    Console.WriteLine("Your color is cyan");
-}
-
+while (t > 0);
